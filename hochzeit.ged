@@ -1,0 +1,48 @@
+0 @I1@ INDI
+1 NAME Karl Ludwig August /Winkelbrandt/
+2 SOUR @S1@
+1 SEX M
+1 BIRT
+2 DATE 17 JUL 1908
+2 SOUR @S1@
+1 OCCU Oberleutnant
+2 DATE 8 AUG 1936
+2 PLAC Köln-Kalk
+2 SOUR @S1@
+
+0 @I2@ INDI
+1 NAME Karolina Margareta /Leonhardt/
+2 SOUR @S1@
+1 SEX F
+1 BIRT
+2 DATE 16 SEP 1907
+2 SOUR @S1@
+
+0 @I3@ INDI
+1 NAME Ludwig /Leonhardt/
+2 SOUR @S1@
+1 SEX M
+1 OCCU Drogist
+2 DATE 8 AUG 1936
+2 PLAC Frankfurt M.
+2 SOUR @S1@
+
+0 @F1@ FAM
+1 HUSB @I3@
+1 CHIL @I2@
+2 SOUR @S1@
+
+0 @F2@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 MARR
+2 TYPE CIVIL
+2 PLAC Frankfurt M.
+2 SOUR @S1@
+1 MARR
+2 TYPE RELI
+2 DATE 8 AUG 1936
+2 PLAC St. Nikolai Frankfurt M.
+2 SOUR @S1@
+
+0 @S1@ SOUR

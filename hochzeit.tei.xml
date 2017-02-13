@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:dcr="http://www.isocat.org/ns/dcr" xmlns:teix="http://www.tei-c.org/ns/Examples"
+xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Beispiel für ein Ereignis</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>intern</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Militärkirchenbuch Köln 1936</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listPerson>
+        <person xml:id="p1">
+          <persName>
+            <forename>Karl Ludwig August</forename>
+            <surname>Winkelbrandt</surname>
+          </persName>
+          <sex value="M" />
+          <birth when="1908-07-17" />
+          <occupation>Oberleutnant</occupation>
+          <residence>
+            <placeName ref="#köln-kalk">Köln-Kalk</placeName>
+          </residence>
+        </person>
+        <person xml:id="p2">
+          <persName>
+            <forename>Karolina Margareta</forename>
+            <surname>Leonhardt</surname>
+          </persName>
+          <sex value="F" />
+          <birth when="1907-09-16" />
+        </person>
+        <person xml:id="p3">
+          <persName>
+            <forename>Ludwig</forename>
+            <surname>Leonhardt</surname>
+          </persName>
+          <sex value="M" />
+          <occupation>Drogist</occupation>
+          <residence>
+            <placeName ref="#frankfurt">Frankfurt M.</placeName>
+          </residence>
+        </person>
+        <relation name="spouse" mutual="#p1 #2" />
+        <relation name="parent" active="#p3" passive="#p2" />
+      </listPerson>
+      <listPlace>
+        <place xml:id="frankfurt" sameAs="http://gov.genealogy.net/adm_136412">
+          <placeName>Frankfurt M.</placeName>
+        </place>
+        <place xml:id="frankfurtStNikolai" sameAs="http://gov.genealogy.net/object_168178">
+          <placeName>St. Nikolai Frankfurt M.</placeName>
+        </place>
+        <place xml:id="köln-kalk" sameAs="http://gov.genealogy.net/KALALKJO30LW">
+          <placeName>Köln-Kalk</placeName>
+        </place>
+      </listPlace>
+      <listEvent>
+        <event xml:id="event1" type="civil-marriage" when="1936-08-07" where="#frankfurt">
+          <desc>
+            <listPerson>
+              <person role="groom" sameAs="#p1" />
+              <person role="bride" sameAs="#p2" />
+            </listPerson>
+          </desc>
+        </event>
+        <event xml:id="event2" type="marriage" when="1936-08-08" where="#frankfurtStNikolai">
+          <desc>
+            <listPerson>
+              <person role="groom" sameAs="#p1" />
+              <person role="bride" sameAs="#p2" />
+            </listPerson>
+          </desc>
+        </event>
+      </listEvent>
+    </body>
+  </text>
+</TEI>

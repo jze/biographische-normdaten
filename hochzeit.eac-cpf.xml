@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
+  <control>
+    <recordId>hochzeit.eac-cpf</recordId>
+    <maintenanceStatus>new</maintenanceStatus>
+    <maintenanceAgency>
+      <agencyName>Jesper Zedlitz, Christian-Albrechts-Universität Kiel</agencyName>
+    </maintenanceAgency>
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime standardDateTime="2016-12-13">13. Dezember 2016</eventDateTime>
+        <agentType>human</agentType>
+        <agent>J. Zedlitz</agent>
+      </maintenanceEvent>
+    </maintenanceHistory>
+  </control>
+  <multipleIdentities>
+    <cpfDescription xml:id="p1">
+      <identity>
+        <entityType>person</entityType>
+        <nameEntry scriptCode="Latn" xml:lang="deu">
+          <part>Karl Ludwig August</part>
+          <part>Winkelbrandt</part>
+        </nameEntry>
+      </identity>
+      <description>
+        <existDates>
+          <dateRange>
+            <fromDate standardDate="1908-07-19">19. Juli 1908</fromDate>
+          </dateRange>
+        </existDates>
+        <places>
+          <place>
+            <placeRole>residence</placeRole>
+            <placeEntry>Köln-Kalk</placeEntry>
+            <date standardDate="1936-08">August 1936</date>
+          </place>
+        </places>
+        <occupations>
+          <occupation>
+            <term>Oberleutnant</term>
+          </occupation>
+        </occupations>
+        <biogHist>
+          <chronList>
+            <chronItem>
+              <date standardDate="1908-07-19">19. Juli 1908</date>
+              <event>Geburt</event>
+            </chronItem>
+            <chronItem>
+              <date standardDate="1936-08">August 1936</date>
+              <placeEntry>Köln-Kalk</placeEntry>
+              <event>Oberleutnant</event>
+            </chronItem>
+            <chronItem>
+              <date standardDate="1936-08-07">7. August 1936</date>
+              <placeEntry>Frankfurt M.</placeEntry>
+              <event>Eheschließung mit Karolina Margareta Leonhardt</event>
+            </chronItem>
+            <chronItem>
+              <date standardDate="1936-08-08">8. August 1936</date>
+              <placeEntry>St. Nikolai Frankfurt M.</placeEntry>
+              <event>Trauung mit Karolina Margareta Leonhardt</event>
+            </chronItem>
+          </chronList>
+        </biogHist>
+      </description>
+      <relations>
+        <cpfRelation cpfRelationType="family" xlink:href="#p2" />
+      </relations>
+    </cpfDescription>
+    <cpfDescription xml:id="p2">
+      <identity>
+        <entityType>person</entityType>
+        <nameEntry scriptCode="Latn" xml:lang="deu">
+          <part>Karolina Margareta</part>
+          <part>Leonhardt</part>
+        </nameEntry>
+      </identity>
+      <description>
+        <existDates>
+          <dateRange>
+            <fromDate standardDate="1907-09-16">16. September 1907</fromDate>
+          </dateRange>
+        </existDates>
+        <places></places>
+        <biogHist>
+          <chronList>
+            <chronItem>
+              <date standardDate="1907-09-16">16. September 1907</date>
+              <event>Geburt</event>
+            </chronItem>
+            <chronItem>
+              <date standardDate="1936-08-07">7. August 1936</date>
+              <placeEntry>Frankfurt M.</placeEntry>
+              <event>Eheschließung mit Karl Ludwig August Winkelbrandt</event>
+            </chronItem>
+            <chronItem>
+              <date standardDate="1936-08-08">8. August 1936</date>
+              <placeEntry>St. Nikolai Frankfurt M.</placeEntry>
+              <event>Trauung mit Karl Ludwig August Winkelbrandt</event>
+            </chronItem>
+          </chronList>
+        </biogHist>
+      </description>
+      <relations>
+        <cpfRelation cpfRelationType="hierarchical-parent" xlink:href="#p3" />
+        <cpfRelation cpfRelationType="family" xlink:href="#p1" />
+      </relations>
+    </cpfDescription>
+    <cpfDescription xml:id="p3">
+      <identity>
+        <entityType>person</entityType>
+        <nameEntry scriptCode="Latn" xml:lang="deu">
+          <part>Ludwig</part>
+          <part>Leonhardt</part>
+        </nameEntry>
+      </identity>
+      <description>
+        <places>
+          <place>
+            <placeRole>residence</placeRole>
+            <placeEntry>Frankfurt M.</placeEntry>
+            <date standardDate="1936-08">August 1936</date>
+          </place>
+        </places>
+        <occupations>
+          <occupation>
+            <term>Drogist</term>
+          </occupation>
+        </occupations>
+        <biogHist>
+          <chronList>
+            <chronItem>
+              <date standardDate="1936-08">August 1936</date>
+              <placeEntry>Frankfurt M.</placeEntry>
+              <event>Drogist</event>
+            </chronItem>
+          </chronList>
+        </biogHist>
+      </description>
+      <relations>
+        <cpfRelation cpfRelationType="hierarchical-child" xlink:href="#p2" />
+      </relations>
+    </cpfDescription>
+  </multipleIdentities>
+</eac-cpf>

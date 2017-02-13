@@ -1,0 +1,36 @@
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:p1 a gndo:DifferentiatedPerson ;
+  gndo:preferredNameForThePerson "Winkelbrandt, Karl Ludwig August" ;
+  gndo:preferredNameEntityForThePerson [
+  	gndo:forename "Karl Ludwig August";
+	gndo:surname "Winkelbrandt"
+  ];
+  gndo:dateOfBirth "1908-07-19"^^xsd:date ;
+  gndo:gender <http://d-nb.info/standards/vocab/gnd/gender#male> ;
+  gndo:professionOrOccupation <http://d-nb.info/gnd/7632437-0> ;
+  gndo:familialRelationship :p2;
+  gndo:professionOrOccupationAsLiteral "Oberleutnant" .
+  
+:p2 a gndo:DifferentiatedPerson ;
+  gndo:preferredNameForThePerson "Leonhardt, Karolina Margareta" ;
+  gndo:preferredNameEntityForThePerson [
+  	gndo:forename "Karolina Margareta";
+	gndo:surname "Leonhardt"
+  ];
+  gndo:dateOfBirth "1907-09-16"^^xsd:date ;
+  gndo:familialRelationship :p1, :p3;
+  gndo:gender <http://d-nb.info/standards/vocab/gnd/gender#female> .
+  
+:p3 a gndo:DifferentiatedPerson ;
+  gndo:preferredNameForThePerson "Leonhardt, Ludwig" ;
+  gndo:preferredNameEntityForThePerson [
+  	gndo:forename "Ludwig";
+	gndo:surname "Leonhardt"
+  ];
+  gndo:familialRelationship :p2;
+  gndo:gender <http://d-nb.info/standards/vocab/gnd/gender#male> ;
+  gndo:professionOrOccupation  <http://d-nb.info/gnd/4150703-4> ;
+  gndo:professionOrOccupationAsLiteral "Drogist" .
+
